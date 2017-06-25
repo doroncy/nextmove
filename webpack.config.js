@@ -1,4 +1,5 @@
 var webpack = require("webpack");
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './main.js',
@@ -20,6 +21,10 @@ module.exports = {
       compress:{
         warnings: true
       }
+    }),
+    new HtmlWebpackPlugin({
+      template: './index.html',
+      hash: true
     })
   ],
   module: {
@@ -46,6 +51,10 @@ module.exports = {
       {
         test   : /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/,
         loader : 'file-loader'
+      },
+      {
+        test: /\.html$/,
+        loader: 'html'
       }
     ]
   }
