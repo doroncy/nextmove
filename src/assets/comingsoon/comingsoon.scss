@@ -1,0 +1,49 @@
+@import '../../styles/foundation/foundation.scss';
+
+.coming-soon-wrap {
+  background: #E6E6E6;
+  height: 100%;
+  padding: 50px;
+
+  .logo-big {
+    max-width: 400px;
+    padding: 50px 0;
+    margin: 0 auto;
+  }
+
+  .content-text-light {
+    color : $light-gray;
+  }
+
+  .content-text-darker {
+    color : $dark-gray;
+  }
+
+  .coming-soon-text {
+    text-align: center;
+    color : $darker-gray;
+    font-weight: bold;
+    font-size: 1.7em;
+    line-height: 50px;
+    margin-top: 30px;
+  }
+  .big-black-font {
+    text-align: center;
+    color: #000;
+    font-size: 2em;
+    line-height: 50px;
+  }
+
+  .text-content-wrap ul {
+    float: right;
+  }
+
+  @include breakpoint(small down) {
+    .logo-big {
+      padding-top: 20px;
+    }
+    .text-content-wrap ul{
+      float: none !important;
+    }
+  }
+}

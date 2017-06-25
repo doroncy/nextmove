@@ -1,0 +1,12 @@
+//@import '../../styles/foundation/foundation.scss';
+@import '../../../node_modules/foundation-sites/scss/foundation';
+
+.about-wrap {
+
+  @include breakpoint(small down) {
+    .about-text {
+      float: none !important;
+    }
+  }
+
+}

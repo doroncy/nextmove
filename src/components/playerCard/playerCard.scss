@@ -1,0 +1,74 @@
+//@import '../../styles/foundation/foundation.scss';
+@import '../../../node_modules/foundation-sites/scss/foundation';
+
+.player-card-wrap {
+  width: 280px;
+  margin-bottom: 40px !important;
+  font-family: "FiraSans", Helvetica, Arial, sans-serif;
+
+  @include breakpoint(small down) {
+    margin: 0 auto;
+  }
+
+  .player-card-image-section, .player-card-info-section {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .player-card-image-section {
+    width:130px;
+    .player-card-image-strip {
+      height: 14px;
+      .player-card-image-strip-grey {
+        width: 108px;
+        height: 10px;
+        display: inline-block;
+        background-color: #E6E6E6;
+      }
+      .player-card-image-strip-orange {
+        width: 22px;
+        height: 10px;
+        display: inline-block;
+        background-color: #DC5800;
+      }
+    }
+
+    .player-card-image {
+      padding-top: 8px;
+    }
+  }
+
+
+  .player-card-info-section {
+    padding: 16px 10px 0;
+    width: 150px;
+
+  }
+
+  .font-player-title {
+    font-size:14px;
+    color: #000;
+  }
+  .font-player-run {
+    font-size:10px;
+    color: #666;
+    &.font-player-black {
+      color: #000;
+
+    }
+    &.font-player-orange {
+      font-style: italic;
+      color: #ED7228;
+    }
+  }
+  .font-player-run-bigger {
+    font-size:11px;
+    color: #666;
+  }
+
+  .born-wrap {
+    padding-bottom: 4px;
+  }
+  .description-wrap {
+    padding-top: 4px;
+  }
+}

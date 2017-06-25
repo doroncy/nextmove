@@ -1,0 +1,36 @@
+{
+  "name": "Nextmove",
+  "version": "1.0.1",
+  "description": "Next Move website",
+  "main": "index.js",
+  "dependencies": {
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "contentful": "^4.4.3",
+    "css-loader": "^0.23.1",
+    "file-loader": "^0.8.5",
+    "foundation-sites": "6.2.3",
+    "image-webpack-loader": "^1.8.0",
+    "lodash": "^4.17.4",
+    "node-sass": "^3.7.0",
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1",
+    "react-scroll": "^1.0.17",
+    "react-slick": "^0.12.2",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.1",
+    "svg-url-loader": "^1.0.3",
+    "webpack": "^1.12.8",
+    "webpack-dev-server": "^1.12.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "webpack-dev-server",
+    "prebuild": "rm -rf dist && mkdir dist",
+    "build": "NODE_ENV=production webpack -p"
+  },
+  "author": "Doron Cy",
+  "license": "ISC"
+}

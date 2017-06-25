@@ -1,0 +1,35 @@
+//@import '../../styles/foundation/foundation.scss';
+@import '../../../node_modules/foundation-sites/scss/foundation';
+
+.contact-wrap {
+  padding-bottom: 50px;
+  .contact-info {
+    margin-top: 15px;
+    li {
+      margin-bottom: 15px;
+    }
+  }
+  @include breakpoint(small down) {
+    text-align: center;
+    .nextmove-strip {
+      display: none;
+    }
+  }
+
+  .nextmove-strip {
+    height: 30px;
+    width: 230px;
+  }
+  .nextmove-strip-grey {
+    width: 180px;
+    height: 30px;
+    display: inline-block;
+    background-color: #E6E6E6;
+  }
+  .nextmove-strip-orange {
+    width: 50px;
+    height: 30px;
+    display: inline-block;
+    background-color: #DC5800;
+  }
+}
