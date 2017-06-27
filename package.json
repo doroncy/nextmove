@@ -1,6 +1,6 @@
 {
   "name": "Nextmove",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Next Move website",
   "main": "index.js",
   "dependencies": {

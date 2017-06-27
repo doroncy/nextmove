@@ -20,6 +20,9 @@ a, a:hover, a:focus, a:active {
   color:inherit !important;
 }
 
+.orange {
+  color: #ED7533 !important;
+}
 .run-font {
   font-family: 'FiraSans', sans-serif;
   font-weight: normal;
@@ -28,6 +31,10 @@ a, a:hover, a:focus, a:active {
   color: #000;
   &.large {
     font-size: 1.5em;
+  }
+  &.bold-italic {
+    font-weight: bold;
+    font-style: italic;
   }
 }
 
@@ -46,19 +53,27 @@ a, a:hover, a:focus, a:active {
   -webkit-font-smoothing: antialiased;
 }
 
+.section-wrap {
+  padding-top: 100px;
+}
 .section-title-large {
-  font-family: 'antoniobold', sans-serif;
-  font-weight: normal;
-  font-size: 23px;
-  -webkit-font-smoothing: antialiased;
-  color: #231F20;
-  text-align: right;
+  float: right;
   padding-right: 10px;
-  @include breakpoint(small down) {
-    text-align: center;
-    padding-bottom: 20px;
+  &>span {
+    font-family: 'antoniobold', sans-serif;
+    font-weight: normal;
+    font-size: 23px;
+    -webkit-font-smoothing: antialiased;
+    color: #231F20;
+    text-align: right;
+    border-top: 10px solid #ED7533;
+    padding-top: 40px;
   }
-
+  @include breakpoint(small down) {
+    float: none;
+    padding-bottom: 40px;
+    text-align: center;
+  }
 }
 
 .full-page-section {
@@ -78,4 +93,7 @@ a, a:hover, a:focus, a:active {
 }
 .pull-left {
   float: left;
+}
+.padding-bottom-lg {
+  padding-bottom: 50px;
 }

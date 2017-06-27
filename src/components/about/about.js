@@ -13,10 +13,12 @@ class About extends Component {
 
   render() {
     return (
-      <Element name="about" className="about-wrap">
+      <Element name="about" className="about-wrap section-wrap">
         <div className="row">
-          <div className="small-12 small-centered medium-3 medium-uncentered columns">
-            <div className="section-title-large">ABOUT US</div>
+          <div className="small-12 small-centered medium-3 medium-uncentered columns clearfix">
+            <div className="section-title-large">
+              <span>ABOUT US</span>
+            </div>
           </div>
           <div className="small-10 about-text small-centered medium-7 medium-uncentered columns end">
             <div className="run-font">

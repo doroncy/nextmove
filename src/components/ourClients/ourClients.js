@@ -9,17 +9,6 @@ import PlayerCard from '../playerCard/';
 const SPACE_ID = 'bz3ki8kdk35e';
 const ACCESS_TOKEN ='91f0f4a6392bfea3fd719086c670b8b81b79d6c0faa663ecb81197d65251fe48';
 
-function fetchContentTypes () {
-  return client.getContentTypes()
-  .then((response) => {
-    console.log('response', response.items);
-  })
-  .catch((error) => {
-    console.log(chalk.red('\nError occurred while fetching Content Types:'))
-    console.error(error)
-  })
-}
-
 class OurClients extends Component {
   constructor(props) {
     super();
@@ -29,7 +18,7 @@ class OurClients extends Component {
 
   componentDidMount() {
     const client = contentful.createClient({
-      space: SPACE_ID,  
+      space: SPACE_ID,
       accessToken: ACCESS_TOKEN
     });
 
@@ -53,12 +42,14 @@ class OurClients extends Component {
       });
 
     return (
-      <Element name="ourClients" className="our-clients-wrap">
+      <Element name="ourClients" className="our-clients-wrap section-wrap">
         <div className="row">
-          <div className="small-12 small-centered medium-3 medium-uncentered columns">
-            <div className="section-title-large">OUR CLIENTS</div>
+          <div className="small-12 small-centered medium-3 medium-uncentered columns clearfix">
+            <div className="section-title-large">
+              <span>OUR CLIENTS</span>
+            </div>
           </div>
-          <div className="small-10 about-text small-centered medium-9 medium-uncentered columns end">
+          <div className="small-12 about-text small-centered medium-9 medium-uncentered columns end">
             <div className="row small-up-1 medium-up-2 large-up-3 small-centered">
               {players}
             </div>

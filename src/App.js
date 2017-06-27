@@ -6,7 +6,7 @@ import Consts from './consts';
 import NavBar from './components/navbar/navbar';
 import Home from './components/home/home';
 import About from './components/about/about';
-import SectionDevider from './components/sectionDevider';
+import MutualClients from './components/mutualClients/mutualClients';
 import OurClients from './components/ourClients/ourClients';
 import Contact from './components/contact';
 
@@ -62,11 +62,9 @@ class App extends React.Component {
       <div>
         <NavBar scrollPosition={this.state.scrollPosition}></NavBar>
         <Home scrollPosition={this.state.scrollPosition}></Home>
-        <SectionDevider></SectionDevider>
         <About></About>
-        <SectionDevider></SectionDevider>
         <OurClients></OurClients>
-        <SectionDevider></SectionDevider>
+        <MutualClients></MutualClients>
         <Contact></Contact>
       </div>
     )
