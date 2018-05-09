@@ -23,7 +23,7 @@ class Home extends Component {
   }
 
   buildGalaryImages() {
-    return ['home_bg1', 'home_bg2', 'home_bg3'].map((image, index)=> {
+    return ['home_bg1', 'home_bg2', 'home_bg3', 'home_bg4'].map((image, index)=> {
       return (
         <div className="gallery-item" key={index}>
           <div className="pos-relative gallery-item-img-wrap">

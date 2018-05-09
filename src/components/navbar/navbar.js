@@ -12,7 +12,7 @@ class NavBar extends React.Component {
     this.menuItems = [
       {path: 'about', title: 'ABOUT'},
       {path: 'ourClients', title: 'OUR CLIENTS'},
-      {path: 'mutualClients', title: 'MUTUAL CLIENTS'},      
+      {path: 'mutualClients', title: 'MUTUAL SIGNINGS'},      
       {path: 'contact', title: 'CONTACT'}
     ];
 

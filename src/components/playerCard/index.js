@@ -17,9 +17,12 @@ const PlayerCard = (props) => {
     </div>)
     : '';
   let moreInfoLink = _.get(props.player, 'moreInfoLink', '');
+  console.log('moreInfoLink', moreInfoLink)
   let moreInfoLinkHtml = moreInfoLink
-    ? <a href="{moreInfoLink}" target="_blank">More info</a>
+    ? <a href={`${moreInfoLink}`} target="_blank">More info</a>
     : '';
+
+    console.log('moreInfoLinkHtml', moreInfoLinkHtml);
 
   return (
     <div className="player-card-wrap">
